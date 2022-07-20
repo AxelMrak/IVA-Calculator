@@ -57,6 +57,12 @@
 <div id="project-access">
 	<h2>Project Access</h2>
 	<p>You can access here <a href="https://vatcalc-axelmrak.netlify.app/">Web Site Link</a></p>
+	<h2>How you can use this?</h2>
+	<ol>
+		<li>First, insert price of the product without VTA or IVA applied.</li>
+		<li>Second, insert percent of VTA or IVA that use in your country.</li>
+		<li>Third, press CALCULATE.</li>
+	</ol>
 </div>
 
 <div id="technologies">
