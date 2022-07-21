@@ -4,18 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <link
+      rel="shortcut icon"
+      href="./ico/icons8-calc-32.png"
+      type="image/x-icon"
+    />
     <title>VAT Calculator</title>
   </head>
   <body>
     <h1>VAT Calculator</h1>
     <div class="calculator" id="calc-div">
-      <label id="label-input" for="field">Introduce product price:</label>
-      <input id="field" type="number" min="0" />
-      <label id="label-input-iva" for="field">Introduce IVA:</label>
-      <input id="field-iva" type="number" min="0" />
-      <button id="btn" type="submit">Calculate</button>
-      <p id="result" class="results"></p>
+      <label id="label-input" for="field-price">Introduce product price:</label>
+      <input
+        id="field"
+        type="number"
+        min=""
+        name="fiel-price"
+        placeholder="0"
+      />
+      <label id="label-input-vat" for="field-v">Introduce VAT/IVA:</label>
+      <input
+        id="field-vat"
+        type="number"
+        min=""
+        name="field-v"
+        placeholder="0"
+      />
+      <button id="btn" type="button">Calculate</button>
+      <div id="results" class="results1">
+        <p >The <strong> amount with VAT included</strong> is:<p id="result-vta"></p></p>
+      </div>
+      <div class="results2">
+        <p >The <strong> amount without VAT</strong> is:<p id="only-price"></p></p>
+      </div>
+      <div class="results3">
+        <p >The<strong> VAT</strong> is:<p id="only-vta"></p></p>
+      </div>
     </div>
   </body>
   <script src="./js/index.js" type="text/javascript"></script>
