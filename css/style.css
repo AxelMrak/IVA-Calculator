@@ -1,5 +1,5 @@
 * {
-  box-sizing: content-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -22,9 +22,7 @@ h1 {
 }
 
 .calculator {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  max-width: 80vw;
   margin: 1rem;
   padding: 2rem;
   border-radius: 25px;
@@ -33,7 +31,7 @@ h1 {
   align-items: center;
   justify-content: space-between;
   color: white;
-  background: linear-gradient(-45deg, #252837ef, #282a36e4, #282a36c9);
+  background: linear-gradient(-45deg, rgba(37, 40, 55, 0.937254902), rgba(40, 42, 54, 0.8941176471), rgba(40, 42, 54, 0.7882352941));
   box-shadow: 5px 5px 25px -1px rgba(0, 0, 0, 0.79);
   -webkit-box-shadow: 5px 5px 25px -1px rgba(0, 0, 0, 0.79);
   -moz-box-shadow: 5px 5px 25px -1px rgba(0, 0, 0, 0.79);
@@ -49,19 +47,19 @@ input {
 
 button {
   padding: 1rem;
-  border: 1px solid white;
-  border-radius: 20px;
+  border: 1px solid black;
+  border-radius: 15px;
   margin: 0.5rem;
-  -webkit-transition: all 1s;
   transition: all 1s;
 }
 
 button:hover {
   background-color: rgba(0, 0, 0, 0.2705882353);
+  border-color: white;
   color: white;
-  box-shadow: 5px 5px 8px -1px rgba(0, 0, 0, 0.28);
-  -webkit-box-shadow: 5px 5px 8px -1px rgba(0, 0, 0, 0.28);
-  -moz-box-shadow: 5px 5px 8px -1px rgba(0, 0, 0, 0.28);
+  box-shadow: 5px 5px 8px -1px rgba(0, 0, 0, 0.2784313725);
+  -webkit-box-shadow: 5px 5px 8px -1px rgba(0, 0, 0, 0.2784313725);
+  -moz-box-shadow: 5px 5px 8px -1px rgba(0, 0, 0, 0.2784313725);
 }
 
 p {
@@ -73,19 +71,24 @@ p {
 .results2,
 .results3 {
   text-align: center;
-  font-size: small;
   color: #ffffff;
-  padding: 0.5rem;
+  padding: 0.2rem;
   margin: 0.5rem;
   border-radius: 20px;
+  font-size: medium;
+  font-weight: 700;
   background: linear-gradient(-45deg, rgba(37, 40, 55, 0.937254902), rgba(40, 42, 54, 0.8941176471), rgba(40, 42, 54, 0.7882352941));
-  box-shadow: 5px 5px 25px -1px rgba(0, 0, 0, 0.79);
-  -webkit-box-shadow: 5px 5px 25px -1px rgba(0, 0, 0, 0.79);
-  -moz-box-shadow: 5px 5px 25px -1px rgba(0, 0, 0, 0.79);
 }
 
 @media screen and (min-width: 300px) and (max-width: 450px) {
   input {
     width: 70%;
   }
+}
+.foot {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  width: 90%;
+  margin: 1rem;
+  border-top: 1px solid gray;
 }/*# sourceMappingURL=style.css.map */
